@@ -1,0 +1,133 @@
+$main_color: #624617;
+$main_bg: rgb(255 255 255 / 0%);
+$bg: #cba343;
+$title_box: 0 3px 6px 0 #cba343;
+$bth_box: 0px 2px 4px 2px rgb(203 163 67 / 48%);
+$font: normal 16px Arial, sans-serif;
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    color: $main_color;
+    background: $main_bg;
+    font: $font;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: 100%;
+    display: block;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#header {
+    height: 80px;
+    background: url("/assets/img/title_logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: $title_box;
+    
+    .header-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        
+        .header-flex-around {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            
+            span {
+                font-size: 17px;
+                font-weight: 600;
+                margin: 0 0 2px 0;
+            }
+            
+            p {
+                font-size: 15px;
+                font-weight: 600;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.app-engine {
+    width: 100%;
+    height: 100%;
+    background: url("/assets/img/bg.png");
+    background-size: contain;
+    
+    .engine-study {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        
+        span {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0 0 3px 0;
+        }
+        
+        p {
+            font-size: 13px;
+            margin: 0;
+            padding: 0;
+            font-weight: 600;
+        }
+        
+        button {
+            background: $bg;
+            border: 0;
+            outline: none;
+            padding: 12px 18px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 12px;
+            margin: 26px 0 0 0;
+            cursor: pointer;
+            box-shadow: $bth_box;
+        }
+    }
+}
+
+#footer {
+    background: #cba343;
+    width: 100%;
+    height: 55px;
+    
+    .footer-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        
+        a {
+            font-size: 21px;
+            text-decoration: none;
+            display: block;
+            margin: 0 50px;
+            color: $main_color;
+            
+            .menu-active {
+                
+            }
+        }
+    }
+}

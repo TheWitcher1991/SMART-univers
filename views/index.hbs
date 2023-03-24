@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>{{ title }}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <link rel="stylesheet" href="{{ stylePath }}">
+
+    <link rel="stylesheet" href="{{ styleIcons }}">
+
+</head>
+<body>
+
+
+<main id="wrapper" class="wrapper app-engine">
+    
+    <header id="header" class="app-title">
+        
+        <div class="header-flex">
+            
+            <div class="header-flex-around">
+
+                {{#if fail}}
+
+                    <span>Расписание</span>
+                    <p>Выберите группу</p>
+                    
+                {{else}}
+
+                    <span>Расписание</span>
+                    <p>{{ group }}</p>
+
+                {{/if}}
+
+            </div>
+
+            <div class="header-flex-end"></div>              
+            
+        </div>
+        
+    </header>
+    
+    <section id="content" class="app-content">
+        
+        <div class="engine-study">
+
+            {{#if fail}}
+
+                <span>Добро пожаловать в приложение!</span>
+                <p>На данный момент мы не знаем вашу группу...</p>
+                
+                
+                <button>Выбрать группу</button>
+
+            {{else}}
+
+             
+
+            {{/if}}
+            
+        </div>
+        
+    </section>
+    
+    <footer id="footer" class="app-menu">
+        
+        <div class="footer-flex">
+
+            <a href="/" class="menu-active">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </a>
+
+            <a href="/map">
+                <i class="fa-solid fa-street-view"></i>
+            </a>
+            
+        </div>
+        
+    </footer>
+    
+</main>
+
+</body>
+<html>

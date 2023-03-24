@@ -1,0 +1,114 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #624617;
+  background: rgba(255, 255, 255, 0);
+  font: normal 16px Arial, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  display: block;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#header {
+  height: 80px;
+  background: url("/assets/img/title_logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 3px 6px 0 #cba343;
+}
+#header .header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#header .header-flex .header-flex-around {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#header .header-flex .header-flex-around span {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 2px 0;
+}
+#header .header-flex .header-flex-around p {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.app-engine {
+  width: 100%;
+  height: 100%;
+  background: url("/assets/img/bg.png");
+  background-size: contain;
+}
+.app-engine .engine-study {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.app-engine .engine-study span {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 3px 0;
+}
+.app-engine .engine-study p {
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+.app-engine .engine-study button {
+  background: #cba343;
+  border: 0;
+  outline: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 12px;
+  margin: 26px 0 0 0;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px 2px rgba(203, 163, 67, 0.48);
+}
+
+#footer {
+  background: #cba343;
+  width: 100%;
+  height: 55px;
+}
+#footer .footer-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#footer .footer-flex a {
+  font-size: 21px;
+  text-decoration: none;
+  display: block;
+  margin: 0 50px;
+  color: #624617;
+}
+
+/*# sourceMappingURL=main.css.map */
